@@ -1,0 +1,191 @@
+\hypertarget{classchess_build_1_1_piece}{}\section{chess\+Build.\+Piece Class Reference}
+\label{classchess_build_1_1_piece}\index{chess\+Build.\+Piece@{chess\+Build.\+Piece}}
+Inheritance diagram for chess\+Build.\+Piece\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classchess_build_1_1_piece}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classchess_build_1_1_piece_a41b06caa70b1b74ee4adde871cdae1d5}{Piece} ()
+\item 
+\hyperlink{classchess_build_1_1_piece_ab4cdefaf4be1dcb991257e94227560cf}{Piece} (String color)
+\item 
+\hyperlink{classchess_build_1_1_piece_a9c0143239c1c8e50aa1a26d13490b816}{Piece} (\hyperlink{classchess_build_1_1_piece}{Piece} other)
+\item 
+\hyperlink{classchess_build_1_1_piece_a8b3114c959f347293be11e115a0ceada}{Piece} (int x, int y, String color, boolean is\+Alive)
+\item 
+void \hyperlink{classchess_build_1_1_piece_abcd8667e17514a6dcd27c3bd18e41279}{setX} (int x)
+\item 
+void \hyperlink{classchess_build_1_1_piece_a3d591027929747d1d2436a702ef15e3d}{setY} (int y)
+\item 
+void \hyperlink{classchess_build_1_1_piece_a06fc50dacba109b1a3903045f33dd61a}{set\+Color} (String color)
+\item 
+void \hyperlink{classchess_build_1_1_piece_a15d7482399188a3635f13b11c4a57d1a}{set\+Is\+Alive} (boolean is\+Alive)
+\item 
+int \hyperlink{classchess_build_1_1_piece_a5d9d98f556141604bbef630597474e42}{getX} ()
+\item 
+int \hyperlink{classchess_build_1_1_piece_a3c6c4ce7aec8f7c4e802aeee92aa7830}{getY} ()
+\item 
+String \hyperlink{classchess_build_1_1_piece_a2ed07d6f74a8a36955faad7cbf197348}{get\+Color} ()
+\item 
+boolean \hyperlink{classchess_build_1_1_piece_a19f95de8f94f11b84a7e1b0a1261825c}{get\+Is\+Alive} ()
+\item 
+boolean \hyperlink{classchess_build_1_1_piece_a7f4903f049048556c3eb7441259719c0}{check\+Move} (\hyperlink{classchess_build_1_1_board}{Board} board, int targetX, int targetY)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a41b06caa70b1b74ee4adde871cdae1d5}\label{classchess_build_1_1_piece_a41b06caa70b1b74ee4adde871cdae1d5}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{Piece()}{Piece()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily chess\+Build.\+Piece.\+Piece (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor for piece \mbox{\Hypertarget{classchess_build_1_1_piece_ab4cdefaf4be1dcb991257e94227560cf}\label{classchess_build_1_1_piece_ab4cdefaf4be1dcb991257e94227560cf}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{Piece()}{Piece()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily chess\+Build.\+Piece.\+Piece (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})}
+
+Constructor for piece 
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a9c0143239c1c8e50aa1a26d13490b816}\label{classchess_build_1_1_piece_a9c0143239c1c8e50aa1a26d13490b816}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{Piece()}{Piece()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily chess\+Build.\+Piece.\+Piece (\begin{DoxyParamCaption}\item[{\hyperlink{classchess_build_1_1_piece}{Piece}}]{other }\end{DoxyParamCaption})}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a8b3114c959f347293be11e115a0ceada}\label{classchess_build_1_1_piece_a8b3114c959f347293be11e115a0ceada}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{Piece()}{Piece()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily chess\+Build.\+Piece.\+Piece (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{String}]{color,  }\item[{boolean}]{is\+Alive }\end{DoxyParamCaption})}
+
+Constructor for piece 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em color} & \\
+\hline
+{\em is\+Alive} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a7f4903f049048556c3eb7441259719c0}\label{classchess_build_1_1_piece_a7f4903f049048556c3eb7441259719c0}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!check\+Move@{check\+Move}}
+\index{check\+Move@{check\+Move}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{check\+Move()}{checkMove()}}
+{\footnotesize\ttfamily boolean chess\+Build.\+Piece.\+check\+Move (\begin{DoxyParamCaption}\item[{\hyperlink{classchess_build_1_1_board}{Board}}]{board,  }\item[{int}]{targetX,  }\item[{int}]{targetY }\end{DoxyParamCaption})}
+
+check\+Move method for piece check whether the piece is out of boundary 
+\begin{DoxyParams}{Parameters}
+{\em board} & \\
+\hline
+{\em targetX} & \\
+\hline
+{\em targetY} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a2ed07d6f74a8a36955faad7cbf197348}\label{classchess_build_1_1_piece_a2ed07d6f74a8a36955faad7cbf197348}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily String chess\+Build.\+Piece.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get color of piece \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a19f95de8f94f11b84a7e1b0a1261825c}\label{classchess_build_1_1_piece_a19f95de8f94f11b84a7e1b0a1261825c}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!get\+Is\+Alive@{get\+Is\+Alive}}
+\index{get\+Is\+Alive@{get\+Is\+Alive}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Is\+Alive()}{getIsAlive()}}
+{\footnotesize\ttfamily boolean chess\+Build.\+Piece.\+get\+Is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get is\+Alive of piece \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a5d9d98f556141604bbef630597474e42}\label{classchess_build_1_1_piece_a5d9d98f556141604bbef630597474e42}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!getX@{getX}}
+\index{getX@{getX}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily int chess\+Build.\+Piece.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get x of piece \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a3c6c4ce7aec8f7c4e802aeee92aa7830}\label{classchess_build_1_1_piece_a3c6c4ce7aec8f7c4e802aeee92aa7830}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!getY@{getY}}
+\index{getY@{getY}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily int chess\+Build.\+Piece.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get y of piece \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a06fc50dacba109b1a3903045f33dd61a}\label{classchess_build_1_1_piece_a06fc50dacba109b1a3903045f33dd61a}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void chess\+Build.\+Piece.\+set\+Color (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})}
+
+Set color of piece 
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a15d7482399188a3635f13b11c4a57d1a}\label{classchess_build_1_1_piece_a15d7482399188a3635f13b11c4a57d1a}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!set\+Is\+Alive@{set\+Is\+Alive}}
+\index{set\+Is\+Alive@{set\+Is\+Alive}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{set\+Is\+Alive()}{setIsAlive()}}
+{\footnotesize\ttfamily void chess\+Build.\+Piece.\+set\+Is\+Alive (\begin{DoxyParamCaption}\item[{boolean}]{is\+Alive }\end{DoxyParamCaption})}
+
+Set is\+Alive of piece 
+\begin{DoxyParams}{Parameters}
+{\em is\+Alive} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_build_1_1_piece_abcd8667e17514a6dcd27c3bd18e41279}\label{classchess_build_1_1_piece_abcd8667e17514a6dcd27c3bd18e41279}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!setX@{setX}}
+\index{setX@{setX}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{set\+X()}{setX()}}
+{\footnotesize\ttfamily void chess\+Build.\+Piece.\+setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+Set x coordinate of piece 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_build_1_1_piece_a3d591027929747d1d2436a702ef15e3d}\label{classchess_build_1_1_piece_a3d591027929747d1d2436a702ef15e3d}} 
+\index{chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}!setY@{setY}}
+\index{setY@{setY}!chess\+Build\+::\+Piece@{chess\+Build\+::\+Piece}}
+\subsubsection{\texorpdfstring{set\+Y()}{setY()}}
+{\footnotesize\ttfamily void chess\+Build.\+Piece.\+setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+Set y coordinate of piece 
+\begin{DoxyParams}{Parameters}
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/chess\+Build/Piece.\+java\end{DoxyCompactItemize}

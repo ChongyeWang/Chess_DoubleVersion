@@ -1,0 +1,338 @@
+\hypertarget{classchess_build_1_1_game}{}\section{chess\+Build.\+Game Class Reference}
+\label{classchess_build_1_1_game}\index{chess\+Build.\+Game@{chess\+Build.\+Game}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classchess_build_1_1_game_aaaf23256b0a8d37893c6671d17e7a163}{Game} ()
+\item 
+\hyperlink{classchess_build_1_1_game_a0d9475651b9d1824074a45bae670c03a}{Game} (\hyperlink{classchess_build_1_1_game}{Game} other)
+\item 
+void \hyperlink{classchess_build_1_1_game_a5a575d1b5298b7ddee17f08a1784153b}{initialize\+Game} ()
+\item 
+String \hyperlink{classchess_build_1_1_game_af10e6d9b2b1192e1381a4ae3cffbca5c}{get\+Winner} ()
+\item 
+void \hyperlink{classchess_build_1_1_game_a6bc01e50f0e37b437db78cb029807d25}{set\+Winner} (String win)
+\item 
+\hyperlink{classchess_build_1_1_player}{Player} \hyperlink{classchess_build_1_1_game_aa2ae560bff80ac9628ffee5b4fa57b33}{get\+White\+Player} ()
+\item 
+\hyperlink{classchess_build_1_1_player}{Player} \hyperlink{classchess_build_1_1_game_a1aa884addf9d116b66cd8643995144a4}{get\+Black\+Player} ()
+\item 
+int \hyperlink{classchess_build_1_1_game_a6271b0abcddb945758b3a70ec3a2be47}{get\+Row} ()
+\item 
+int \hyperlink{classchess_build_1_1_game_a6c917e051708604f5385062146e2880c}{get\+Column} ()
+\item 
+boolean \hyperlink{classchess_build_1_1_game_abf2a3e04a58e0ed986dc5951002b3af6}{get\+Game\+End} ()
+\item 
+void \hyperlink{classchess_build_1_1_game_ac6400be2899f19c3ee57cc5946ea4154}{set\+Game\+End} (boolean end)
+\item 
+boolean \hyperlink{classchess_build_1_1_game_a5ef5fc90fd60545c3b70a1eff98ce306}{get\+White\+Turn} ()
+\item 
+void \hyperlink{classchess_build_1_1_game_a32d1a61488dc1af6c1d33c3ff2f40bd1}{set\+White\+Turn} (boolean turn)
+\item 
+void \hyperlink{classchess_build_1_1_game_ae396b8c108a1fc863db4ae1a665de341}{initialize\+Chess\+Board} ()
+\item 
+void \hyperlink{classchess_build_1_1_game_a11ff0646f34a1aec27b9153c135ed0ba}{initialize\+Black\+Player} ()
+\item 
+void \hyperlink{classchess_build_1_1_game_ae164441ea754520c20538fcb304ff2d5}{initialize\+White\+Player} ()
+\item 
+void \hyperlink{classchess_build_1_1_game_ace070bfd577b47865b05b2220048bb0c}{move\+Piece} (int currX, int currY, int targetX, int targetY)
+\item 
+boolean \hyperlink{classchess_build_1_1_game_a58ffbacab5b8755dd53248b635329807}{move\+Piece\+Helper} (int currX, int currY, int targetX, int targetY)
+\item 
+void \hyperlink{classchess_build_1_1_game_a7191ea6816333cc8b6d6994e8241f0b5}{white\+Move} (int currX, int currY, int targetX, int targetY)
+\item 
+void \hyperlink{classchess_build_1_1_game_a42ebac6f010a92be253e201f06fd0487}{black\+Move} (int currX, int currY, int targetX, int targetY)
+\item 
+boolean \hyperlink{classchess_build_1_1_game_aeb3f335df2f0143f39c6654d02b77a97}{check\+Mate} (\hyperlink{classchess_build_1_1_player}{Player} player)
+\item 
+boolean \hyperlink{classchess_build_1_1_game_a2e93dda47c0e5c8ec8c7cc234c048b9e}{safe\+Position} (\hyperlink{classchess_build_1_1_player}{Player} player, int x, int y)
+\item 
+boolean \hyperlink{classchess_build_1_1_game_a594c69523dbb0732107f9809d9c6a80e}{check\+King\+Target\+Position} (\hyperlink{classchess_build_1_1_player}{Player} player, int currX, int currY, int targetX, int targetY)
+\item 
+void \hyperlink{classchess_build_1_1_game_a873c004e82d9a3bed1f8dec57b781ee5}{change\+Version} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchess_build_1_1_game_a4b725ab015366deb0a7253ad676cc063}\label{classchess_build_1_1_game_a4b725ab015366deb0a7253ad676cc063}} 
+\hyperlink{classchess_build_1_1_board}{Board} {\bfseries board}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchess_build_1_1_game_aaaf23256b0a8d37893c6671d17e7a163}\label{classchess_build_1_1_game_aaaf23256b0a8d37893c6671d17e7a163}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!Game@{Game}}
+\index{Game@{Game}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily chess\+Build.\+Game.\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor of game \mbox{\Hypertarget{classchess_build_1_1_game_a0d9475651b9d1824074a45bae670c03a}\label{classchess_build_1_1_game_a0d9475651b9d1824074a45bae670c03a}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!Game@{Game}}
+\index{Game@{Game}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily chess\+Build.\+Game.\+Game (\begin{DoxyParamCaption}\item[{\hyperlink{classchess_build_1_1_game}{Game}}]{other }\end{DoxyParamCaption})}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classchess_build_1_1_game_a42ebac6f010a92be253e201f06fd0487}\label{classchess_build_1_1_game_a42ebac6f010a92be253e201f06fd0487}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!black\+Move@{black\+Move}}
+\index{black\+Move@{black\+Move}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{black\+Move()}{blackMove()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+black\+Move (\begin{DoxyParamCaption}\item[{int}]{currX,  }\item[{int}]{currY,  }\item[{int}]{targetX,  }\item[{int}]{targetY }\end{DoxyParamCaption})}
+
+Move the black piece 
+\begin{DoxyParams}{Parameters}
+{\em currX} & \\
+\hline
+{\em currY} & \\
+\hline
+{\em targetX} & \\
+\hline
+{\em targetY} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_build_1_1_game_a873c004e82d9a3bed1f8dec57b781ee5}\label{classchess_build_1_1_game_a873c004e82d9a3bed1f8dec57b781ee5}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!change\+Version@{change\+Version}}
+\index{change\+Version@{change\+Version}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{change\+Version()}{changeVersion()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+change\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method changes the version of the game by replacing original piece knight with new piece kin and elephant. \mbox{\Hypertarget{classchess_build_1_1_game_a594c69523dbb0732107f9809d9c6a80e}\label{classchess_build_1_1_game_a594c69523dbb0732107f9809d9c6a80e}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!check\+King\+Target\+Position@{check\+King\+Target\+Position}}
+\index{check\+King\+Target\+Position@{check\+King\+Target\+Position}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{check\+King\+Target\+Position()}{checkKingTargetPosition()}}
+{\footnotesize\ttfamily boolean chess\+Build.\+Game.\+check\+King\+Target\+Position (\begin{DoxyParamCaption}\item[{\hyperlink{classchess_build_1_1_player}{Player}}]{player,  }\item[{int}]{currX,  }\item[{int}]{currY,  }\item[{int}]{targetX,  }\item[{int}]{targetY }\end{DoxyParamCaption})}
+
+Check whether the target place of king is dangerous 
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+{\em currX} & \\
+\hline
+{\em currY} & \\
+\hline
+{\em targetX} & \\
+\hline
+{\em targetY} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_aeb3f335df2f0143f39c6654d02b77a97}\label{classchess_build_1_1_game_aeb3f335df2f0143f39c6654d02b77a97}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!check\+Mate@{check\+Mate}}
+\index{check\+Mate@{check\+Mate}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{check\+Mate()}{checkMate()}}
+{\footnotesize\ttfamily boolean chess\+Build.\+Game.\+check\+Mate (\begin{DoxyParamCaption}\item[{\hyperlink{classchess_build_1_1_player}{Player}}]{player }\end{DoxyParamCaption})}
+
+Check\+Mate function for the game 
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_a1aa884addf9d116b66cd8643995144a4}\label{classchess_build_1_1_game_a1aa884addf9d116b66cd8643995144a4}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!get\+Black\+Player@{get\+Black\+Player}}
+\index{get\+Black\+Player@{get\+Black\+Player}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Black\+Player()}{getBlackPlayer()}}
+{\footnotesize\ttfamily \hyperlink{classchess_build_1_1_player}{Player} chess\+Build.\+Game.\+get\+Black\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the black player of the game \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_a6c917e051708604f5385062146e2880c}\label{classchess_build_1_1_game_a6c917e051708604f5385062146e2880c}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!get\+Column@{get\+Column}}
+\index{get\+Column@{get\+Column}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Column()}{getColumn()}}
+{\footnotesize\ttfamily int chess\+Build.\+Game.\+get\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the column \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_abf2a3e04a58e0ed986dc5951002b3af6}\label{classchess_build_1_1_game_abf2a3e04a58e0ed986dc5951002b3af6}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!get\+Game\+End@{get\+Game\+End}}
+\index{get\+Game\+End@{get\+Game\+End}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Game\+End()}{getGameEnd()}}
+{\footnotesize\ttfamily boolean chess\+Build.\+Game.\+get\+Game\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the game\+End \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_a6271b0abcddb945758b3a70ec3a2be47}\label{classchess_build_1_1_game_a6271b0abcddb945758b3a70ec3a2be47}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!get\+Row@{get\+Row}}
+\index{get\+Row@{get\+Row}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Row()}{getRow()}}
+{\footnotesize\ttfamily int chess\+Build.\+Game.\+get\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the row \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_aa2ae560bff80ac9628ffee5b4fa57b33}\label{classchess_build_1_1_game_aa2ae560bff80ac9628ffee5b4fa57b33}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!get\+White\+Player@{get\+White\+Player}}
+\index{get\+White\+Player@{get\+White\+Player}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+White\+Player()}{getWhitePlayer()}}
+{\footnotesize\ttfamily \hyperlink{classchess_build_1_1_player}{Player} chess\+Build.\+Game.\+get\+White\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the white player of the game \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_a5ef5fc90fd60545c3b70a1eff98ce306}\label{classchess_build_1_1_game_a5ef5fc90fd60545c3b70a1eff98ce306}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!get\+White\+Turn@{get\+White\+Turn}}
+\index{get\+White\+Turn@{get\+White\+Turn}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+White\+Turn()}{getWhiteTurn()}}
+{\footnotesize\ttfamily boolean chess\+Build.\+Game.\+get\+White\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the turn of player \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_af10e6d9b2b1192e1381a4ae3cffbca5c}\label{classchess_build_1_1_game_af10e6d9b2b1192e1381a4ae3cffbca5c}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!get\+Winner@{get\+Winner}}
+\index{get\+Winner@{get\+Winner}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Winner()}{getWinner()}}
+{\footnotesize\ttfamily String chess\+Build.\+Game.\+get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get winner method \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_a11ff0646f34a1aec27b9153c135ed0ba}\label{classchess_build_1_1_game_a11ff0646f34a1aec27b9153c135ed0ba}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!initialize\+Black\+Player@{initialize\+Black\+Player}}
+\index{initialize\+Black\+Player@{initialize\+Black\+Player}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{initialize\+Black\+Player()}{initializeBlackPlayer()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+initialize\+Black\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize the black\+Player of the game \mbox{\Hypertarget{classchess_build_1_1_game_ae396b8c108a1fc863db4ae1a665de341}\label{classchess_build_1_1_game_ae396b8c108a1fc863db4ae1a665de341}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!initialize\+Chess\+Board@{initialize\+Chess\+Board}}
+\index{initialize\+Chess\+Board@{initialize\+Chess\+Board}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{initialize\+Chess\+Board()}{initializeChessBoard()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+initialize\+Chess\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize the board of the game \mbox{\Hypertarget{classchess_build_1_1_game_a5a575d1b5298b7ddee17f08a1784153b}\label{classchess_build_1_1_game_a5a575d1b5298b7ddee17f08a1784153b}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!initialize\+Game@{initialize\+Game}}
+\index{initialize\+Game@{initialize\+Game}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{initialize\+Game()}{initializeGame()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+initialize\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize the game \mbox{\Hypertarget{classchess_build_1_1_game_ae164441ea754520c20538fcb304ff2d5}\label{classchess_build_1_1_game_ae164441ea754520c20538fcb304ff2d5}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!initialize\+White\+Player@{initialize\+White\+Player}}
+\index{initialize\+White\+Player@{initialize\+White\+Player}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{initialize\+White\+Player()}{initializeWhitePlayer()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+initialize\+White\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize the white player of the game \mbox{\Hypertarget{classchess_build_1_1_game_ace070bfd577b47865b05b2220048bb0c}\label{classchess_build_1_1_game_ace070bfd577b47865b05b2220048bb0c}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!move\+Piece@{move\+Piece}}
+\index{move\+Piece@{move\+Piece}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{move\+Piece()}{movePiece()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+move\+Piece (\begin{DoxyParamCaption}\item[{int}]{currX,  }\item[{int}]{currY,  }\item[{int}]{targetX,  }\item[{int}]{targetY }\end{DoxyParamCaption})}
+
+This function move the piece on the board by taking the initial position and target position 
+\begin{DoxyParams}{Parameters}
+{\em currX} & \\
+\hline
+{\em currY} & \\
+\hline
+{\em targetX} & \\
+\hline
+{\em targetY} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_build_1_1_game_a58ffbacab5b8755dd53248b635329807}\label{classchess_build_1_1_game_a58ffbacab5b8755dd53248b635329807}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!move\+Piece\+Helper@{move\+Piece\+Helper}}
+\index{move\+Piece\+Helper@{move\+Piece\+Helper}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{move\+Piece\+Helper()}{movePieceHelper()}}
+{\footnotesize\ttfamily boolean chess\+Build.\+Game.\+move\+Piece\+Helper (\begin{DoxyParamCaption}\item[{int}]{currX,  }\item[{int}]{currY,  }\item[{int}]{targetX,  }\item[{int}]{targetY }\end{DoxyParamCaption})}
+
+The function will return false if the input is invalid 
+\begin{DoxyParams}{Parameters}
+{\em currX} & \\
+\hline
+{\em currY} & \\
+\hline
+{\em targetX} & \\
+\hline
+{\em targetY} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_a2e93dda47c0e5c8ec8c7cc234c048b9e}\label{classchess_build_1_1_game_a2e93dda47c0e5c8ec8c7cc234c048b9e}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!safe\+Position@{safe\+Position}}
+\index{safe\+Position@{safe\+Position}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{safe\+Position()}{safePosition()}}
+{\footnotesize\ttfamily boolean chess\+Build.\+Game.\+safe\+Position (\begin{DoxyParamCaption}\item[{\hyperlink{classchess_build_1_1_player}{Player}}]{player,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+The function checks whether the selected position is safe for the player 
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchess_build_1_1_game_ac6400be2899f19c3ee57cc5946ea4154}\label{classchess_build_1_1_game_ac6400be2899f19c3ee57cc5946ea4154}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!set\+Game\+End@{set\+Game\+End}}
+\index{set\+Game\+End@{set\+Game\+End}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{set\+Game\+End()}{setGameEnd()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+set\+Game\+End (\begin{DoxyParamCaption}\item[{boolean}]{end }\end{DoxyParamCaption})}
+
+Set the game\+End 
+\begin{DoxyParams}{Parameters}
+{\em end} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_build_1_1_game_a32d1a61488dc1af6c1d33c3ff2f40bd1}\label{classchess_build_1_1_game_a32d1a61488dc1af6c1d33c3ff2f40bd1}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!set\+White\+Turn@{set\+White\+Turn}}
+\index{set\+White\+Turn@{set\+White\+Turn}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{set\+White\+Turn()}{setWhiteTurn()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+set\+White\+Turn (\begin{DoxyParamCaption}\item[{boolean}]{turn }\end{DoxyParamCaption})}
+
+Set the turn of player 
+\begin{DoxyParams}{Parameters}
+{\em turn} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_build_1_1_game_a6bc01e50f0e37b437db78cb029807d25}\label{classchess_build_1_1_game_a6bc01e50f0e37b437db78cb029807d25}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!set\+Winner@{set\+Winner}}
+\index{set\+Winner@{set\+Winner}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{set\+Winner()}{setWinner()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+set\+Winner (\begin{DoxyParamCaption}\item[{String}]{win }\end{DoxyParamCaption})}
+
+Set the winner of the game 
+\begin{DoxyParams}{Parameters}
+{\em win} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchess_build_1_1_game_a7191ea6816333cc8b6d6994e8241f0b5}\label{classchess_build_1_1_game_a7191ea6816333cc8b6d6994e8241f0b5}} 
+\index{chess\+Build\+::\+Game@{chess\+Build\+::\+Game}!white\+Move@{white\+Move}}
+\index{white\+Move@{white\+Move}!chess\+Build\+::\+Game@{chess\+Build\+::\+Game}}
+\subsubsection{\texorpdfstring{white\+Move()}{whiteMove()}}
+{\footnotesize\ttfamily void chess\+Build.\+Game.\+white\+Move (\begin{DoxyParamCaption}\item[{int}]{currX,  }\item[{int}]{currY,  }\item[{int}]{targetX,  }\item[{int}]{targetY }\end{DoxyParamCaption})}
+
+Move the white \hyperlink{classchess_build_1_1_piece}{Piece} 
+\begin{DoxyParams}{Parameters}
+{\em currX} & \\
+\hline
+{\em currY} & \\
+\hline
+{\em targetX} & \\
+\hline
+{\em targetY} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/chess\+Build/Game.\+java\end{DoxyCompactItemize}
