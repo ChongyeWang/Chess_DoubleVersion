@@ -10,4 +10,4 @@ This project is developed using eclipse.
 This project supports a new version of chess by replacing some pieces of the classic version of chess with pieces from Chinese version of chess and Japanese version of chess. 
 
 # How to use
-See the test plan for details.
+Look at the test plan for details.
