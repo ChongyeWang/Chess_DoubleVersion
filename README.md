@@ -1,5 +1,8 @@
 # Chess_DoubleVersion
 
+# Author
+Chongye Wang
+
 # Description
 This chess game is developed using java and it supports two version, including the classic version and the new version, which allows users to switch.
 
